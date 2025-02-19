@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Book List</title>
+    </head>
+    <body>
+        <ul>
+            <!-- # Inserta código diferente a html utilizando un bucle for -->
+            {% for book in libros %}
+            <!-- Trae uno a uno los libros, de cada libro nos va a sacar el titulo y el autor -->
+            <li>{{ book.title }} - {{ book.author }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

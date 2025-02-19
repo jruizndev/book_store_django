@@ -6,4 +6,4 @@ from .models import Book
 class BookAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'publish_date', 'isbn')
     search_fields = ('title', 'author', 'isbn')
-    list_filter = ('publish_date', 'author')
+    list_filter = ('publish_date', 'isbn')
